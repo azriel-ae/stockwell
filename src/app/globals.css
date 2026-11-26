@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #252a2d;
+  --color-graphite: #41494d;
+  --color-mutedslate: #68777d;
+  --color-softsage: #a8b5a0;
+  --color-sagedeep: #6f7f66;
+  --color-warmivory: #f5f4ef;
+  --color-line: #e4e5e0;
+  --color-linemuted: #ecece7;
+
+  --color-success: #5f7a62;
+  --color-successbg: #ebf0ea;
+  --color-warning: #9a7a3a;
+  --color-warningbg: #f6efdc;
+  --color-danger: #ae4e42;
+  --color-dangerbg: #f7eae7;
+
+  --font-sans: Inter, "Inter var", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --radius-card: 8px;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-warmivory);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #cdd7c6;
+}
+
+/* Consistent focus treatment across interactive elements */
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 2px solid var(--color-softsage);
+  outline-offset: 1px;
+}
+
+/* Thin, calm scrollbars for table regions */
+.scroll-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #c8cbc4 transparent;
+}
+.scroll-thin::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: #c8cbc4;
+  border-radius: 4px;
+}
+
+/* Numeric alignment in tables */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
