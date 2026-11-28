@@ -11,11 +11,11 @@ Built with Next.js (App Router) + TypeScript + Tailwind CSS + Recharts + Zod.
 ## Architecture
 
 ```
-Browser ── Stockwell server (Next.js route handlers, server components)
-              │   DRIVEBASE_API_KEY stays here — never sent to the browser
+Browser ── Stockwell server
+              │   
               ▼
-         Drivebase REST API (/api/v1)
+         Drivebase REST API 
               │
               ▼
-         Google Sheets (records) / Google Drive (files)
+         Google Sheets / Google Drive 
 ```
