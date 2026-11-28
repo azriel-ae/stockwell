@@ -14,8 +14,8 @@ Built with Next.js (App Router) + TypeScript + Tailwind CSS + Recharts + Zod.
 Browser ── Stockwell server
               │   
               ▼
-         Drivebase REST API 
+Drivebase REST API 
               │
               ▼
-         Google Sheets / Google Drive 
+Google Sheets / Google Drive 
 ```
